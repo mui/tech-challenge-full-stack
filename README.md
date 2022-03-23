@@ -4,7 +4,7 @@ This challenge is part of the hiring process at MUI for the React Engineer posit
 
 ## Context
 
-MUI is looking for fullstack engineers to join the Toolpad team. We search people who are proficient in both modern react development and backend technologies. Throughout this challenge you are required to build a simple forum application.
+MUI is looking for fullstack engineers to join the Toolpad team. We search people who are proficient in both modern react development and backend technologies. Throughout this challenge you are required to build a basic forum application.
 
 You are handed a Postgresql database containing some data and a starter Next.js application. You'll have to interface with this database and visualize it in a React UI.
 
@@ -77,6 +77,11 @@ If everything is set up well you should see the message "Database connection: su
 - Selecting a thread: Clicking a thread should reveal its posts sorted by least recent first
 - There's a form that allows you to enter a subject and a body and a button to add a new post to the thread.
 
+### Out of scope
+
+- To keep the scope of the assignment small, we'll keep the system user-agnostic. No authentication is required, assume you are the only user of this application.
+- No need to write documentation, unless there's extra steps involved in starting the application.
+
 ### Nice to haves:
 
 Don't tackle these unless you have time left
@@ -87,16 +92,10 @@ Don't tackle these unless you have time left
 - Allow for creating new threads
 - The database comes without indices. Propose a set of indices to optimize the usage of this db.
 
-### Out of scope
-
-- To keep the scope of the assignment small, we'll keep the system user-agnostic. No authentication is required, assume you are the only user of this application.
-- No need to write documentation, unless there's extra steps involved in starting the application.
-
 ### Evaluation
 
 - First of all, try to respect the time limit, it's part of the grading
 - Quality over quantity: better half of the features 100% done than all of the features 50% done.
--
 
 ### Submission
 
