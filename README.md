@@ -62,7 +62,7 @@ docker-compose up
 
 Run the application with
 
-```
+```sh
 yarn
 yarn dev
 ```
