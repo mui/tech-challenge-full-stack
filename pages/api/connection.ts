@@ -14,7 +14,10 @@ export default async (
   res: NextApiResponse<Connection>
 ) => {
   try {
-    await pool.query("SELECT NOW()");
+    await Promise.all([
+      pool.query("SELECT count(*) FROM thread"),
+      pool.query("SELECT count(*) FROM post"),
+    ]);
     res.status(200).json({ error: null });
   } catch (error) {
     res.status(200).json({ error: (error as DatabaseError).message });
