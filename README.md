@@ -1,10 +1,18 @@
-# WIP
+# Full-stack technical challenge @ MUI
 
-### Starting point
+This challenge is part of the hiring process at MUI for the React Engineer position. The idea is to make as much progress as possible under a given time constraint (3-4 hours).
 
-- Provide docker-compose to start the db.
-- Provide empty next.js application with Material UI starter.
-- Provide database schema + seed with init data.
+## Context
+
+MUI is looking for fullstack engineers to join the Toolpad team. We search people who are proficient in both modern react development and backend technologies. Throughout this challenge you are required to build a simple forum application.
+
+You are handed a Postgresql database containing some data and a starter Next.js application. You'll have to interface with this database and visualize it in a React UI.
+
+## Starting point
+
+- docker-compose to start the db.
+- empty next.js application with Material UI starter.
+- database schema + seed with init data.
 
 ```sql
 create table thread (
@@ -81,7 +89,6 @@ Don't tackle these unless you have time left
 ### Out of scope
 
 - To keep the scope of the assignment small, we'll keep the system is user-agnostic. No authentication is required, assume you are the only user of this application.
-
 
 ### Evaluation
 
