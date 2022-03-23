@@ -33,11 +33,9 @@ const Home: NextPage = () => {
         </Typography>
         <Typography gutterBottom>
           {connection ? (
-            connection.error ? (
-              `Database Connection failed: "${connection.error}"`
-            ) : (
-              "Database connection succeeded"
-            )
+            `Database connection: ${
+              connection.error ? `failed: "${connection.error}"` : "succeeded"
+            }`
           ) : (
             <CircularProgress />
           )}
