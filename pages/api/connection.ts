@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { Pool, DatabaseError } from "pg";
 
 const pool = new Pool({
-  connectionString: `postgres://postgres:postgres@localhost:5432/postgres`,
+  connectionString: `postgres://postgres:postgres@localhost:5433/postgres`,
 });
 
 export interface Connection {

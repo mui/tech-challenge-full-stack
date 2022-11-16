@@ -1,12 +1,16 @@
 # Full-stack technical challenge @ MUI
 
-This challenge is part of the hiring process at MUI for the React Engineer position. The idea is to make as much progress as possible under a given time constraint (3-4 hours).
+This challenge is part of the hiring process at MUI for the React Engineer position.
+The idea is to make as much progress as possible under a given time constraint (3-4 hours).
 
 ## Context
 
-MUI is looking for fullstack engineers to join the Toolpad team. We search people who are proficient in both modern react development and backend technologies. Throughout this challenge you are required to build a basic forum application.
+MUI is looking for Full-stack engineers to join the team.
+We search people who are proficient in both modern React development and backend technologies.
+Throughout this challenge, you are required to build a basic forum application.
 
-You are handed a Postgresql database containing some data and a starter Next.js application. You'll have to interface with this database and visualize it in a React UI.
+You are handed a PostgreSQL database containing some data and a starter Next.js application.
+You'll have to interface with this database and visualize it in a React UI.
 
 ## Database
 
@@ -29,7 +33,8 @@ CREATE TABLE post (
 );
 ```
 
-This is a simple forum-like application with separate threads, each thread containing a set of posts. Your task is to build an UI on top of this data that allows viewing the threads and adding new posts.
+This is a simple forum-like application with separate threads, each thread containing a set of posts.
+Your task is to build an UI on top of this data that allows viewing the threads and adding new posts.
 
 A mockup of a potential UI:
 
@@ -54,25 +59,25 @@ A mockup of a potential UI:
 
 ### Run instructions
 
-Start the database with
+Start the database with:
 
 ```sh
 docker-compose up
 ```
 
-Run the application with
+Run the application with:
 
 ```sh
 yarn
 yarn dev
 ```
 
-The UI is accessible at http://localhost:3000
+The UI is accessible at http://localhost:3002
 If everything is set up well you should see the message "Database connection: succeeded"
 
 ### Requirements
 
-- You are allowed to use any library or ORM you want, but you must use the provided postgres database and Next.js application.
+- You are allowed to use any library or ORM you want, but you must use the provided PostgreSQL database and Next.js application.
 - List of threads: Threads must be displayed in a list, **sorted by the thread with the most recently created post first**.
 - Selecting a thread: Clicking a thread should reveal its posts sorted by least recent first
 - There's a form that allows you to enter a subject and a body and a button to add a new post to the thread.
