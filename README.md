@@ -1,6 +1,6 @@
 # Full-stack technical challenge @ MUI
 
-This challenge is part of the hiring process at MUI for the React Engineer position.
+This challenge is part of the hiring process at MUI for some of the Software Engineer positions.
 The idea is to make as much progress as possible under a given time constraint (3-4 hours).
 
 ## Context
