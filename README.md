@@ -6,18 +6,18 @@ The idea is to make as much progress as possible under a given time constraint (
 ## Why are we doing this?
 
 MUI is looking for Full-stack engineers to join the team.
-We search people who are proficient in both modern React development and backend technologies.
+We are looking for people who are proficient in both modern React development and backend technologies.
 Throughout this challenge, you are required to build a basic forum application.
 
 ## Context about MUI
 
-The short-term objective of MUI is to become the UI toolkit for React.
-We are unifying the fragmented ecosystem of dependencies into a single set of simple, beautiful, consistent, and accessible React components.
+MUI's objective is to become the UI toolkit for React developers.
+We're unifying the fragmented ecosystem of dependencies into a single set of simple, beautiful, consistent, and accessible React components.
 
-The long-term objective of MUI is to make building great React UIs and web applications quicker, simpler, and accessible to more people through a low-code platform.
-It's about writing less code, e.g. https://youtu.be/GnO7D5UaDig?t=2451.
+Our mission is, ultimately, to make building great UIs and web apps a breeze ⎯ quicker, simpler, and accessible to more people.
+At the end of the day, it's about [_writing less code_](https://youtu.be/GnO7D5UaDig?t=2451).
 
-Head to [our Handbook](https://mui-org.notion.site/Why-MUI-d8b8c142a6a44e3aa963f26edf4e03db) to learn more.
+Head over to [our company Handbook](https://mui-org.notion.site/Why-MUI-d8b8c142a6a44e3aa963f26edf4e03db) to learn more!
 
 ## Summary
 
@@ -46,7 +46,7 @@ CREATE TABLE post (
 ```
 
 This is a simple forum-like application with separate threads, each thread containing a set of posts.
-Your task is to build an UI on top of this data that allows viewing the threads and adding new posts.
+Your task is to build a UI on top of this data that allows viewing the threads and adding new posts.
 
 A mockup of a potential UI:
 
@@ -97,7 +97,7 @@ If everything is set up well you should see the message "Database connection: su
 ### Out of scope
 
 - To keep the scope of the assignment small, we'll keep the system user-agnostic. No authentication is required, assume you are the only user of this application.
-- No need to write documentation, unless there's extra steps involved in starting the application.
+- No need to write documentation, unless there are extra steps involved in starting the application.
 
 ### Nice to haves:
 
@@ -112,12 +112,17 @@ Don't tackle these unless you have time left
 ### Evaluation
 
 - First of all, try to respect the time limit, it's part of the grading
-- Quality over quantity: better half of the features 100% done than all of the features 50% done.
+- Quality over quantity: prefer doing half of the features at 100% rather than all of the features at 50%.
 
 ## Submission
 
-**DO NOT** host your project on a public repository.
-Please send us a zip file containing this project using the upload link that we have provided by email (**with** the _.git_ folder).
-To significantly reduce the size of the archive, you can remove the `/_node_modules_/` folders.
-If you don't have the upload link, you can simply send it to job@mui.com.
+Instructions:
+
+- **DO NOT** host your project on a public repository.
+- Please send us a zip file containing this project using the upload link that we have provided by email (**with** the _.git_ folder).
+- To significantly reduce the size of the archive, you can remove the `/_node_modules_/` and `/.next/` folders.
+- If you don't have the upload link, you can simply send it to job@mui.com.
 Thanks!
+
+We're excited and looking forward to seeing what you'll create!
+Good luck 🚀
