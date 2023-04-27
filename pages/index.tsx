@@ -9,12 +9,16 @@ import { CircularProgress } from "@mui/material";
 const Home: NextPage = () => {
   const [connection, setConnection] = React.useState<Connection | null>(null);
   React.useEffect(() => {
-    fetch("/api/connection")
-      .then((response) => response.json())
-      .then(
-        (data) => setConnection(data),
-        (error) => setConnection({ error: error.message })
-      );
+    fetch("/api/connection").then(async (response) => {
+      try {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        setConnection(await response.json());
+      } catch (error: any) {
+        setConnection({ error: error.message });
+      }
+    });
   }, []);
 
   return (
