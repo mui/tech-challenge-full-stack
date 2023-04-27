@@ -116,6 +116,8 @@ VALUES
 (99, '2020-01-21 11:52:16', 'Et dolores nostrum quia ad et.'),
 (100, '2020-06-17 16:58:55', 'Asperiores dolores optio accusantium atque illum dolores eos.');
 
+SELECT setval('thread_id_seq', (SELECT max(id) FROM thread), true);
+
 INSERT INTO post(id, thread_id, created_at, title, body)
 VALUES
 (1, 1, '2021-11-15 12:40:56', 'Doloribus ut aut enim natus.', 'Vero explicabo odit quod quis impedit nostrum quae voluptas. Eius numquam minus. At nam voluptatem eius magnam iste quidem. Laboriosam dolorum ut sequi dicta reiciendis est reprehenderit et iure.'),
@@ -2831,3 +2833,5 @@ Quis omnis omnis iure repudiandae est ut. Dignissimos eligendi consequatur amet 
 Ut sapiente nihil quia molestias beatae rerum sit quae. Eveniet non aut. Excepturi esse tenetur et debitis earum voluptas velit. Saepe voluptates nesciunt id nam quam excepturi dicta asperiores laborum.
 
 Possimus ut nemo unde veritatis eum beatae. Commodi nobis velit. Vero quam officia saepe recusandae. Quaerat voluptas illo omnis tempore incidunt cum.');
+
+SELECT setval('post_id_seq', (SELECT max(id) FROM post), true);
