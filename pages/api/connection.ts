@@ -1,4 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import type { NextApiHandler } from "next";
 import { Pool, DatabaseError } from "pg";
 
 const pool = new Pool({
@@ -8,11 +8,7 @@ const pool = new Pool({
 export interface Connection {
   error: string | null;
 }
-
-export default async (
-  req: NextApiRequest,
-  res: NextApiResponse<Connection>
-) => {
+const connectionApi: NextApiHandler<Connection> = async (req, res) => {
   try {
     await Promise.all([
       pool.query("SELECT count(*) FROM thread"),
@@ -23,3 +19,5 @@ export default async (
     res.status(200).json({ error: (error as DatabaseError).message });
   }
 };
+
+export default connectionApi;
