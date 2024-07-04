@@ -19,10 +19,10 @@ At the end of the day, it's about [_writing less code_](https://youtu.be/GnO7D5U
 
 Head over to [our company Handbook](https://mui-org.notion.site/Why-MUI-d8b8c142a6a44e3aa963f26edf4e03db) to learn more!
 
-## Summary
+## The challenge
 
 You are handed a PostgreSQL database containing some data and a starter Next.js application.
-You'll have to interface with this database and visualize it in a React UI.
+You have to interface with this database and visualize it in a React UI.
 
 ## Database
 
@@ -118,11 +118,10 @@ Don't tackle these unless you have time left
 
 Instructions:
 
-- **DO NOT** host your project on a public repository.
+- **DO NOT** fork / host your project on a public repository.
 - Please send us a zip file containing this project using the upload link that we have provided by email (**with** the _.git_ folder).
 - To significantly reduce the size of the archive, you can remove the `/_node_modules_/` and `/.next/` folders.
-- If you don't have the upload link, you can simply send it to job@mui.com.
-Thanks!
+- If you don't have the upload link, you can send it to job@mui.com.
 
 We're excited and looking forward to seeing what you'll create!
 Good luck 🚀
